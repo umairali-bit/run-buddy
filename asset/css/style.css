@@ -59,5 +59,49 @@ header h1 {
    }
    footer a {
     color: #024e76;
-    ba
   }
+
+  section{
+    padding: 60px;
+    
+  }
+  
+/* Hero Style Start */
+.hero {
+  background-image: url(../images/hero-bg.jpeg);
+  height:600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* Hero Style End */
+
+/* Hero form */
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color:#024e76;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+/* 
+The ... syntax is just a placeholder that indicates 
+that there's other content in this code that shouldn't be overwritten. 
+Just add the actual CSS from the preceding snippet.
+Alternatively, there is a shorthand property to 
+include all three values on one line, as in the following code:
+.hero-form {
+  ...
+  border: solid 3px #024e76;
+}
+hero form ends 
+*/
+
+
+/* have completed till 1.3.5  till the quiz */
+
