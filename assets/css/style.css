@@ -131,7 +131,7 @@ hero form ends
 }
 /* form styling ends */
 
-/* what-we-do styling */
+
 .intro{
   text-align: center;
 }
@@ -143,9 +143,7 @@ hero form ends
   font-size: 20px;
   margin: 0 auto;
 }
-/* what we do styling ends */
 
-/* what you do styling starts */
 .steps{
   text-align: center;
   background: #fce138;
@@ -189,3 +187,26 @@ hero form ends
 .steps span{
   font-size: 38px;
 }
+.trainers {
+  text-align: center;
+}
+.trainer {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: #fce138;
+}
+
+.trainer img {
+  width: 35%;
+  float: left;
+}
+
+.trainer-bio {
+  padding: 35px;
+  float: left;
+  width: 65%;
+}
+  .trainer{
+    overflow:auto;
+  }
