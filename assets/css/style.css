@@ -35,14 +35,21 @@ header h1 {
   }
   header nav {
     margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
   }
-  header nav ul li {
-    display: inline;
+  header nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
   }
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
    }
    footer{
      background: #fce138;
