@@ -59,6 +59,15 @@ header h1 {
     font-weight: lighter;
     font-size: 1.55vw;
    }
+   header nav ul li a:hover{
+     background: #fce138;
+     color: #024e76;
+     border-radius: 15px;
+     text-shadow:none;
+   }
+   /* header style ends */
+
+   /* footer style starts */
    footer{
      background: #fce138;
      width:100%;
@@ -73,7 +82,7 @@ header h1 {
      color: #024e76;
      font-size: 30px
    }
-   footer div{
+   footer div{ 
      
      line-height: 1.5;
      text-align:justify;
@@ -81,10 +90,15 @@ header h1 {
    footer a {
     color: #024e76;
   }
+  /* footer style ends */
+
+  /* section for the whole page padding */
 
   section{
     padding: 60px;
      }
+
+  /* section for the whole page padding  ends */
   
 /* Hero Style Start */
 .hero {
@@ -127,6 +141,9 @@ line-height: 1.2;
   border-radius: 15px;
 
 }
+.hero-form button:hover{
+  background-color: #39a6b2; 
+}
 
 /* 
 The ... syntax is just a placeholder that indicates 
@@ -159,7 +176,15 @@ hero form ends
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
 }
+
+/* focus lets you style input feilds */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
 .hero-form label {
   margin: 0 5px;
 }
@@ -173,8 +198,8 @@ hero form ends
 }
 /* form styling ends */
 
-
-.into p{
+/* "what you do" "what we do" "meet the trainers" styling starts */
+.intro p{
   text-align: center;
 }
 
@@ -213,11 +238,18 @@ hero form ends
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+/* setting border-bottom after step 2 and step 4 */
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+/* setting border-bottom after step 2 and step 4 ends */
 
 .step h3 {
   color: #024e76;
@@ -291,13 +323,18 @@ hero form ends
     font-size: 22px;
     margin-bottom: 15px;
   }
-  
-    
-    
-  }
   .trainersimg{
     float: right;
   }
+  /* setting up flexbox row for h2s on the page "meet the trainers" etc */
+  .flex-row{
+    display: flex;
+  }
+
+/* "what you do" "what we do" "meet the trainers" styling ends */
+
+
+
   /* REACH OUT STYLES START */
   .contact {
     background: #024e76;
@@ -335,6 +372,10 @@ hero form ends
     padding: 15px 0;
     font-size: 16px;
   }
+  .contact-form button:hover{
+    color: #fce138;
+    background: #39a6b2;
+  }
   .contact-info div {
   
     color: white;
@@ -357,9 +398,7 @@ hero form ends
   
   /* REACH OUT STYLES END */
 
-  .flex-row{
-    display: flex;
-  }
+ 
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -368,7 +407,6 @@ hero form ends
     justify-content: center;
     position: relative;
   }
-
   header h1 {
     width: 100%;
     text-align: center;
